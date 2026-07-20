@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CallASAP — Privacy Policy</title>
+<style>
+body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#222}
+h1{font-size:1.6rem} h2{font-size:1.2rem;margin-top:2rem}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid #ccc;padding:.5rem;text-align:left;font-size:.95rem}
+@media (prefers-color-scheme: dark){body{background:#111;color:#ddd} a{color:#8ab4f8} th,td{border-color:#444}}
+</style></head><body>
+<h1>CallASAP — Privacy Policy</h1>
+<p><i>Last updated: July 19, 2026</i></p>
+<p>CallASAP ("the app") is published by DAP Collections. The app lets you schedule a simulated ("fake") incoming phone call to <b>your own device</b>, where an AI plays a caller you describe. This policy explains what information the app handles and where it goes.</p>
+
+<h2>The short version</h2>
+<ul>
+<li>We do <b>not</b> ask for your name, email address, or phone number. There is no account to create.</li>
+<li>We do <b>not</b> sell your personal information.</li>
+<li>The text you write (who's calling and what it's about) <b>is sent to our servers</b> to generate the call and to run an automated safety check.</li>
+<li>If you pick a real contact, their <b>photo never leaves your phone</b>. Their <b>first name only</b> is sent, because it is the name the AI caller uses.</li>
+<li>During a live conversation your microphone audio is streamed to the AI in real time so it can reply. It is <b>not recorded and not stored</b>.</li>
+<li>The app can only ever ring <b>your own device</b>. It cannot place a call to anyone else.</li>
+</ul>
+
+<h2>Information we collect</h2>
+<p><b>Your prompt.</b> The caller name and the description of what the call is about. This is sent to our servers to generate the call script and voice, or to run a live conversation, and to perform an automated safety check.</p>
+<p><b>Anonymous user ID.</b> On first launch we create a random, anonymous Firebase Authentication ID. It is not linked to your name, email, phone number, or Google account. It tracks your token balance and call history.</p>
+<p><b>Call and token records.</b> Call times, type (voice message or live conversation), status, the generated script, and a log of token grants and spends.</p>
+<p><b>Safety moderation records.</b> Every automated content-check decision is logged. Where a request is <b>flagged</b>, its text and the caller name are retained for review. Where a request is <b>allowed</b>, only a short truncated sample (about 60 characters) is kept. Calls you file with "Report this call" are stored for review.</p>
+<p><b>Diagnostics.</b> Basic crash and performance data to keep the app stable.</p>
+
+<h2>Contacts (optional)</h2>
+<p>If you choose "Use a real contact", the contact's <b>photo</b> is copied into the app's private storage on your device so it can appear on the call screen — <b>the photo is never uploaded to our servers</b>. The contact's <b>first name only</b> (for example "Dan" from "Dan James Patrick") is sent to our servers, because it is the name the AI caller uses and it is checked by our safety screening. We do not send the surname, phone number, email address, or any other contact field. Contacts access is optional; the app works fully without it.</p>
+
+<h2>Microphone (live conversations only)</h2>
+<p>For a live conversation call, your microphone audio is streamed in real time to the AI service so it can respond to you. <b>This audio is not recorded, not stored by us, and not used to train models.</b> The microphone is not used for recorded voice-message calls, and not used at any other time.</p>
+
+<h2>Advertising</h2>
+<p>The app shows optional rewarded video ads through Google AdMob (watch an ad to earn tokens). AdMob may collect device and advertising identifiers; see <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/ads">how Google uses ad data</a>. We request non-personalised ads. When you complete an ad, your anonymous user ID is passed to Google so the reward can be verified and credited to the correct account. <b>We never share your prompts, your contacts, or your call content with advertisers.</b></p>
+
+<h2>What we do NOT collect</h2>
+<ul>
+<li>No name, email address, or phone number.</li>
+<li>No location tracking.</li>
+<li>No call logs or messages, and no access to your real phone calls.</li>
+<li>No contact photos, surnames, or phone numbers leave your device.</li>
+<li>No sale of your personal data, ever.</li>
+</ul>
+
+<h2>Who processes your data</h2>
+<table>
+<tr><th>Provider</th><th>Purpose</th></tr>
+<tr><td>Google Firebase (Authentication, Firestore, Cloud Storage, Cloud Functions)</td><td>Anonymous identity, token balance, call records, temporary audio storage</td></tr>
+<tr><td>Google Cloud Run</td><td>Relays live conversations between your device and the AI</td></tr>
+<tr><td>Google Vertex AI (Gemini)</td><td>Generates the call script and voice, powers live conversations, and performs the automated safety check</td></tr>
+<tr><td>Google AdMob</td><td>Optional rewarded ads and reward verification</td></tr>
+</table>
+<p>These providers process data on our behalf. Data is processed on Google Cloud infrastructure (project region: US), which may involve transfer to and storage in the United States and other countries. Data in transit is encrypted (TLS).</p>
+
+<h2>Data retention</h2>
+<ul>
+<li>Generated call audio is stored briefly so it can be delivered to your device, and is deleted from your device once the call ends.</li>
+<li>Call and token records are kept while the app remains associated with your anonymous ID.</li>
+<li>Safety moderation records and reports are retained as long as needed for safety, abuse prevention, and legal compliance.</li>
+<li>Live conversation audio is never retained.</li>
+</ul>
+
+<h2>Data deletion</h2>
+<p>Uninstalling the app removes all local data (scheduled calls, cached audio, contact photos) and ends access to your anonymous account. To delete the server-side records associated with your anonymous ID, see <a href="delete-account.html">Delete your data</a>.</p>
+
+<h2>Your rights</h2>
+<p>Contacts, microphone, and notifications are optional and can be revoked at any time in Android Settings (the app still works, though incoming calls will not appear without notifications). You can reset or delete your advertising ID in Android Settings → Privacy → Ads. Depending on where you live (for example the EEA, the UK, or California) you may have rights to access, correct, delete, or restrict processing of your personal information, and to complain to your local regulator. Contact us to exercise these rights.</p>
+
+<h2>AI-generated content</h2>
+<p>Call scripts and voices are generated by AI and are clearly labelled as AI-generated in the app during a call. Requests are automatically screened, and we prohibit content that impersonates real businesses or officials, demands money or personal information, simulates genuine emergencies, or targets or harasses a real person.</p>
+
+<h2>Children</h2>
+<p>CallASAP is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy; material changes will be reflected by the date above.</p>
+
+<h2>Contact</h2>
+<p>Questions or data requests: <b>dapcollections@gmail.com</b></p>
+</body></html>
