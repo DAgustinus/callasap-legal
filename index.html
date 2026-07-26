@@ -10,12 +10,12 @@ th,td{border:1px solid #ccc;padding:.5rem;text-align:left;font-size:.95rem}
 @media (prefers-color-scheme: dark){body{background:#111;color:#ddd} a{color:#8ab4f8} th,td{border-color:#444}}
 </style></head><body>
 <h1>CallASAP — Privacy Policy</h1>
-<p><i>Last updated: July 19, 2026</i></p>
+<p><i>Last updated: July 26, 2026</i></p>
 <p>CallASAP ("the app") is published by DAP Collections. The app lets you schedule a simulated ("fake") incoming phone call to <b>your own device</b>, where an AI plays a caller you describe. This policy explains what information the app handles and where it goes.</p>
 
 <h2>The short version</h2>
 <ul>
-<li>We do <b>not</b> ask for your name, email address, or phone number. There is no account to create.</li>
+<li>We do <b>not</b> require your name, email address, or phone number. There is <b>no account you must create</b> — signing in with Google is optional, and only exists so your tokens survive a new phone.</li>
 <li>We do <b>not</b> sell your personal information.</li>
 <li>The text you write (who's calling and what it's about) <b>is sent to our servers</b> to generate the call and to run an automated safety check.</li>
 <li>If you pick a real contact, their <b>photo never leaves your phone</b>. Their <b>first name only</b> is sent, because it is the name the AI caller uses.</li>
@@ -28,6 +28,9 @@ th,td{border:1px solid #ccc;padding:.5rem;text-align:left;font-size:.95rem}
 <p><b>Anonymous user ID.</b> On first launch we create a random, anonymous Firebase Authentication ID. It is not linked to your name, email, phone number, or Google account. It tracks your token balance and call history.</p>
 <p><b>Call and token records.</b> Call times, type (voice message or live conversation), status, the generated script, and a log of token grants and spends.</p>
 <p><b>Safety moderation records.</b> Every automated content-check decision is logged. Where a request is <b>flagged</b>, its text and the caller name are retained for review. Where a request is <b>allowed</b>, only a short truncated sample (about 60 characters) is kept. Calls you file with "Report this call" are stored for review.</p>
+<p><b>Optional Google sign-in.</b> If you choose to sign in (Account → "Sign in with Google"), Google shares your name, email address, and profile picture with us, and your anonymous ID becomes linked to your Google account so your tokens and history survive a reinstall or a new phone. We use this only to operate your account — never for advertising. If you never sign in, we never receive it.</p>
+<p><b>Hashed device identifier.</b> To stop abuse of the one-time free token grants (for example by reinstalling the app repeatedly), we send a one-way cryptographic hash (SHA-256) of your device's Android ID to our servers when the app starts. The raw identifier never leaves your device, and before storage our servers hash it again with a secret key. The result cannot be reversed to identify your device, and is used <b>only</b> to record which one-time grants a device has already claimed — never for advertising or tracking.</p>
+<p><b>In-app feedback.</b> If you use "Send feedback", we store the star rating you gave, any note you typed, your app version, and your anonymous user ID. It is used only to improve the app — never published, never shown to other users, never used for advertising. Sending feedback is entirely optional. <b>This is separate from rating us on Google Play:</b> your in-app rating stays with us and is not posted to the store.</p>
 <p><b>Diagnostics.</b> Basic crash and performance data to keep the app stable.</p>
 
 <h2>Contacts (optional)</h2>
@@ -37,11 +40,11 @@ th,td{border:1px solid #ccc;padding:.5rem;text-align:left;font-size:.95rem}
 <p>For a live conversation call, your microphone audio is streamed in real time to the AI service so it can respond to you. <b>This audio is not recorded, not stored by us, and not used to train models.</b> The microphone is not used for recorded voice-message calls, and not used at any other time.</p>
 
 <h2>Advertising</h2>
-<p>The app shows optional rewarded video ads through Google AdMob (watch an ad to earn tokens). AdMob may collect device and advertising identifiers; see <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/ads">how Google uses ad data</a>. We request non-personalised ads. When you complete an ad, your anonymous user ID is passed to Google so the reward can be verified and credited to the correct account. <b>We never share your prompts, your contacts, or your call content with advertisers.</b></p>
+<p>The app shows optional rewarded video ads through Google AdMob (watch an ad to earn tokens). To serve those ads, AdMob collects and processes device and advertising identifiers, and <b>may use them to show you personalised ads</b>; see <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/ads">how Google uses ad data</a>. That processing is Google's, not ours — we do not control it and we receive no advertising profile from it. You can reset or delete your advertising ID, and opt out of ad personalisation, in Android Settings → Privacy → Ads. When you complete an ad, your anonymous user ID is passed to Google so the reward can be verified and credited to the correct account. <b>We never share your prompts, your contacts, or your call content with advertisers.</b></p>
 
 <h2>What we do NOT collect</h2>
 <ul>
-<li>No name, email address, or phone number.</li>
+<li>No name, email address, or phone number — unless you choose to sign in with Google, which is optional.</li>
 <li>No location tracking.</li>
 <li>No call logs or messages, and no access to your real phone calls.</li>
 <li>No contact photos, surnames, or phone numbers leave your device.</li>
